@@ -1,0 +1,15 @@
+[package]
+name = "chain-reaction-python"
+version = "0.1.0"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+name = "chain_reaction"
+crate-type = ["cdylib"]
+
+[dependencies]
+engine = { path = "../engine" }
+pyo3 = { version = "0.21", features = ["extension-module", "abi3-py39"] }
+serde_json.workspace = true
