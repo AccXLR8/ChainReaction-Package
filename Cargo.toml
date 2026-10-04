@@ -1,8 +1,6 @@
 [workspace]
 members = [
     "engine",
-    "cli",
-    "web-api",
     "python-bindings",
 ]
 resolver = "2"
